@@ -12,7 +12,7 @@
       "end": "(?=;)|(?=\\s*{)",
       "patterns": [
         {
-          "name": "entity.name.function.scss",
+          "name": "entity.name.custom.scss",
           "match": "[\\w-]+\\.css"
         }
       ]
@@ -22,7 +22,7 @@
       "begin": "(?<!//.*?)(?<!/\\*[\\s\\S]*?)(@critical)(?:\\s+([\\w-]+\\.css))?\\s*({)",
       "beginCaptures": {
         "1": { "name": "keyword.control.at-rule.critical.scss" },
-        "2": { "name": "entity.name.function.scss" },
+        "2": { "name": "entity.name.custom.scss" },
         "3": { "name": "punctuation.section.begin.scss" }
       },
       "end": "(})",
@@ -41,18 +41,18 @@
       }
     },
     {
-      "name": "keyword.control.at-rule.function.scss",
+      "name": "keyword.control.at-rule.custom.scss",
       "match": "(?<!//.*?)(?<!/\\*[\\s\\S]*?)(?<=\\@)(critical)(?=\\s*\\{)"
     },
     {
-      "name": "keyword.control.at-rule.function.scss",
+      "name": "keyword.control.at-rule.custom.scss",
       "match": "(?<!//.*?)(?<!/\\*[\\s\\S]*?)(?<=\\@)(critical)(?=\\s+[\\w-]+\\.css\\s*\\{)"
     },
     {
-      "name": "entity.name.function.scss",
+      "name": "entity.name.custom.scss",
       "match": "(?<!//.*?)(?<!/\\*[\\s\\S]*?)(?<=\\@critical\\s)([\\w-]+\\.css)(?=\\s*\\{)",
       "captures": {
-        "1": { "name": "entity.name.function.scss" }
+        "1": { "name": "entity.name.custom.scss" }
       }
     }
   ],
