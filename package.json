@@ -3,7 +3,7 @@
   "publisher": "Ranfurly",
   "displayName": "at-critical",
   "description": "Injects @critical syntax support for SCSS, highlighting and suppressing errors for custom blocks.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/spellicon.png",
   "repository": {
     "type": "git",
